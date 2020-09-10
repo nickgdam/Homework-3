@@ -33,25 +33,37 @@ function generatePassword() {
       
       var passwordCharacters = []
 
-    if (confirmUpperCase === "special" || confirmUpperCase === "Special") {
+     
+      
+   if (confirmUpperCase === "special" || confirmUpperCase === "Special") {
       passwordCharacters = passwordCharacters.concat(special)
-    };
+    }
 
-    if (confirmUpperCase === "numeric" || confirmUpperCase === "Numeric") {
+   else if (confirmUpperCase === "numeric" || confirmUpperCase === "Numeric") {
       passwordCharacters = passwordCharacters.concat(number)
-    };
+    }
 
-    if (confirmUpperCase === "lowercase" || confirmUpperCase === "Lowercase") {
+    else if (confirmUpperCase === "lowercase" || confirmUpperCase === "Lowercase") {
       passwordCharacters = passwordCharacters.concat(Lower)
-    };
+    }
 
-    if (confirmUpperCase === "uppercase" || confirmUpperCase === "Uppercase") {
+    else if (confirmUpperCase === "uppercase" || confirmUpperCase === "Uppercase") {
       passwordCharacters = passwordCharacters.concat(Upper)
-    };
+    }
+            
+    else if (confirmUpperCase === "all" || confirmUpperCase === "All") {
+      passwordCharacters = passwordCharacters.concat(all)
+    }
 
-    if (confirmUpperCase === "all" || confirmUpperCase === "All"){
-      passwordCharacters = passwordCharacters.concat(all)};
+              else (alert("You must select valid criteria!"));
+
+
     
+
+    
+  
+      
+   
     
        
     
