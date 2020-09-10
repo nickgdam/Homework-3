@@ -55,7 +55,8 @@ function generatePassword() {
       passwordCharacters = passwordCharacters.concat(all)
     }
 
-              else (alert("You must select valid criteria! Please try again!"));
+              else (alert("You must select valid criteria! Please try again!"))
+              preventDefault(); 
 
 
     
