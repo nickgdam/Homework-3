@@ -28,7 +28,7 @@ function generatePassword() {
       
      
    
-    var confirmUpperCase = prompt("What type of characters would you like to use? (Please type 'Uppercase', 'Lowercase', 'Numeric', Special' or 'All'.)");
+    var confirmUpperCase = prompt("What type of characters would you like to use? (Please type 'Uppercase', 'Lowercase', 'Numeric', 'Special' or 'All'.)");
       
       
       var passwordCharacters = []
@@ -55,7 +55,7 @@ function generatePassword() {
       passwordCharacters = passwordCharacters.concat(all)
     }
 
-              else (alert("You must select valid criteria!"));
+              else (alert("You must select valid criteria! Please try again!"));
 
 
     
